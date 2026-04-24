@@ -5,11 +5,39 @@ The goal of this project is to predict whether a passenger survived the Titanic 
 
 ## Project structure
 
-ml-titanic/
-├── data/
-├── notebooks/
-├── src/
-├── README.md
+titanic-ml-project/ 
+│ 
+├── data/ 
+│ └── Titanic-Dataset.csv  
+│ 
+├── models/ 
+│ └── best_model.pkl 
+│
+├── notebooks/ 
+│ ├── titanic01_eda.ipynb 
+│ ├── titanic02_preprocessing.ipynb 
+│ ├── titanic03_modelcompare.ipynb 
+│ ├── titanic04_modelimprovement.ipynb 
+│ ├── titanic05_pipeline.ipynb 
+│ ├── titanic06_tuning.ipynb 
+│ ├── titanic07_modelcomparison.ipynb 
+│ ├── titanic08_explainability.ipynb 
+│ └── titanic09_evaluation.ipynb 
+│ 
+├── src/ 
+│ ├── pipeline.py 
+│ ├── train.py 
+│ └── evaluate.py 
+│ 
+├── models/ 
+│ └── best_model.pkl 
+│
+├──venv/ 
+│ └──Lib
+│ └──.gitignore
+│
+├──app.py
+├── README.mdrequirements.txt 
 └── requirements.txt
 
 ## 📊 Dataset
@@ -26,27 +54,39 @@ Features include:
 - Logistic Regression
 - Decision Tree
 - Random Forest
+- XGBoost
+- LightGBM ✅ (Best Model)
   
 ## 📈 Results
-Model	Accuracy	Precision	Recall	F1 Score
-Decision Tree	0.82	0.82	0.82	0.82
-Logistic Regression	0.82	0.81	0.82	0.81
-Random Forest	0.80	0.80	0.80	0.80
+| Model                     | Accuracy | F1 Score |
+|--------------------------|----------|----------|
+| LightGBM                 | 0.82     | 0.75     |
+| XGBoost                  | 0.80     | 0.73     |
+| Random Forest (Baseline) | 0.79     | 0.72     |
+| Random Forest (Tuned)    | 0.79     | 0.71     |
+| Logistic Regression      | 0.79     | 0.70     |
+| Decision Tree            | 0.75     | 0.67     |
 
-## 🔍 Key Findings
-- Female passengers had significantly higher survival rates than males
-- Higher-class passengers (Pclass=1) had better chances of survival
-- Fare (a proxy for wealth) strongly influenced survival
-- Age had moderate impact, with children having higher survival rates
-- Model results aligned with EDA insights, indicating meaningful learning
+## Hyperparameter Tuning
+ Used GridSearchCV and RandomizedSearchCV
+ Tuned parameters like:
+ - n_estimators
+ - max_depth
+ - min_samples_split
 
-## How to run
-
-1. Install dependencies:
+## 🚀 How to Run
+1. Install dependencies
 pip install -r requirements.txt
 
-2. Open notebooks:
+2. Run notebooks
 jupyter notebook
+
+3. Train model (script)
+python src/train.py
+
+4. Evaluate model
+python src/evaluate.py
+
 ## 📊 Visualizations
 Survival by Sex
 
@@ -60,6 +100,19 @@ Feature Importance (Random Forest)
 
 <img width="665" height="455" alt="image" src="https://github.com/user-attachments/assets/974c0136-37f6-4fc1-9d78-325cd86ef8f7" />
 
+## 📊 Key Learnings
+* Importance of end-to-end ML pipelines
+* Model comparison and proper evaluation metrics
+* Trade-offs between precision and recall
+* Real-world importance of explainability (SHAP)
+
+## 🔍 Key Findings
+- Female passengers had significantly higher survival rates than males
+- Higher-class passengers (Pclass=1) had better chances of survival
+- Fare (a proxy for wealth) strongly influenced survival
+- Age had moderate impact, with children having higher survival rates
+- Model results aligned with EDA insights, indicating meaningful learning
+
 ## Dataset
 
 Download from Kaggle and place in:
@@ -69,6 +122,3 @@ data/raw/
 
 Python, pandas, numpy, scikit-learn, matplotlib, seaborn
 
-## 📌 Conclusion
-
-Although the Decision Tree achieved the highest test accuracy, it may be prone to overfitting. Random Forest provides a more robust and generalizable solution. Overall, the project demonstrates how machine learning can uncover meaningful patterns from structured data.

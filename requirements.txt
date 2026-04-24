@@ -7,3 +7,5 @@ jupyter
 xgboost
 lightgbm
 shap
+joblib
+streamlit
