@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 pandas
 numpy
 matplotlib
@@ -8,4 +9,16 @@ xgboost
 lightgbm
 shap
 joblib
+=======
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+jupyter
+xgboost
+lightgbm
+shap
+joblib
+>>>>>>> 5d05f8f181b17c7f41998b9e66f0bdf16a2ad6ef
 streamlit
