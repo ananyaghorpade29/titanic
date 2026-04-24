@@ -6,40 +6,40 @@ The goal of this project is to predict whether a passenger survived the Titanic 
 
 ## Project structure
 
-titanic-ml-project/ 
-│ 
-├── data/ 
-│ └── Titanic-Dataset.csv  
-│ 
-├── models/ 
-│ └── best_model.pkl 
-│
-├── notebooks/ 
-│ ├── titanic01_eda.ipynb 
-│ ├── titanic02_preprocessing.ipynb 
-│ ├── titanic03_modelcompare.ipynb 
-│ ├── titanic04_modelimprovement.ipynb 
-│ ├── titanic05_pipeline.ipynb 
-│ ├── titanic06_tuning.ipynb 
-│ ├── titanic07_modelcomparison.ipynb 
-│ ├── titanic08_explainability.ipynb 
-│ └── titanic09_evaluation.ipynb 
-│ 
-├── src/ 
-│ ├── pipeline.py 
-│ ├── train.py 
-│ └── evaluate.py 
-│ 
-├── models/ 
-│ └── best_model.pkl 
-│
-├──venv/ 
-│ └──Lib
-│ └──.gitignore
-│
-├──app.py
-├── README.mdrequirements.txt 
-└── requirements.txt
+titanic-ml-project/    
+│     
+├── data/      
+│ └── Titanic-Dataset.csv     
+│    
+├── models/     
+│ └── best_model.pkl     
+│     
+├── notebooks/      
+│ ├── titanic01_eda.ipynb     
+│ ├── titanic02_preprocessing.ipynb     
+│ ├── titanic03_modelcompare.ipynb       
+│ ├── titanic04_modelimprovement.ipynb     
+│ ├── titanic05_pipeline.ipynb     
+│ ├── titanic06_tuning.ipynb       
+│ ├── titanic07_modelcomparison.ipynb      
+│ ├── titanic08_explainability.ipynb       
+│ └── titanic09_evaluation.ipynb       
+│       
+├── src/       
+│ ├── pipeline.py      
+│ ├── train.py       
+│ └── evaluate.py       
+│       
+├── models/       
+│ └── best_model.pkl       
+│      
+├──venv/      
+│ └──Lib     
+│ └──.gitignore     
+│     
+├──app.py    
+├── README.mdrequirements.txt     
+└── requirements.txt    
 
 ## 📊 Dataset
 Source: Titanic dataset (Kaggle)
