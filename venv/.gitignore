@@ -2,7 +2,7 @@ __pycache__/
 *.pyc
 .env
 .ipynb_checkpoints/
-models/*.pk
+
 
 # allow this specific file
 !models/best_model.pkl
