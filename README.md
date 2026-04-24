@@ -5,58 +5,59 @@ The goal of this project is to predict whether a passenger survived the Titanic 
 
 ## Project structure
 
-titanic-ml-project/   
-│    
-├── data/    
-│ └── Titanic-Dataset.csv     
-│    
-├── models/    
-│ └── best_model.pkl    
-│     
-├── notebooks/      
-│ ├── titanic01_eda.ipynb    
-│ ├── titanic02_preprocessing.ipynb    
-│ ├── titanic03_modelcompare.ipynb    
-│ ├── titanic04_modelimprovement.ipynb     
-│ ├── titanic05_pipeline.ipynb     
-│ ├── titanic06_tuning.ipynb     
-│ ├── titanic07_modelcomparison.ipynb    
-│ ├── titanic08_explainability.ipynb    
-│ └── titanic09_evaluation.ipynb    
-│    
-├── src/     
-│ ├── pipeline.py     
-│ ├── train.py      
-│ └── evaluate.py      
-│    
-├── models/     
-│ └── best_model.pkl     
-│       
-├──venv/     
-│ └──Lib    
-│ └──.gitignore     
-│     
-├── README.mdrequirements.txt     
-└── requirements.txt    
+titanic-ml-project/ 
+│ 
+├── data/ 
+│ └── Titanic-Dataset.csv  
+│ 
+├── models/ 
+│ └── best_model.pkl 
+│
+├── notebooks/ 
+│ ├── titanic01_eda.ipynb 
+│ ├── titanic02_preprocessing.ipynb 
+│ ├── titanic03_modelcompare.ipynb 
+│ ├── titanic04_modelimprovement.ipynb 
+│ ├── titanic05_pipeline.ipynb 
+│ ├── titanic06_tuning.ipynb 
+│ ├── titanic07_modelcomparison.ipynb 
+│ ├── titanic08_explainability.ipynb 
+│ └── titanic09_evaluation.ipynb 
+│ 
+├── src/ 
+│ ├── pipeline.py 
+│ ├── train.py 
+│ └── evaluate.py 
+│ 
+├── models/ 
+│ └── best_model.pkl 
+│
+├──venv/ 
+│ └──Lib
+│ └──.gitignore
+│
+├──app.py
+├── README.mdrequirements.txt 
+└── requirements.txt
 
-## 📊 Dataset     
-Source: Titanic dataset (Kaggle)     
-Features include:     
- - Age    
- - Sex    
- - Passenger Class (Pclass)    
- - Fare    
- - Number of family members (SibSp, Parch)    
- - Embarked port    
-        
-## ⚙️ Models Used     
-- Logistic Regression    
-- Decision Tree   
-- Random Forest    
-- XGBoost    
-- LightGBM ✅ (Best Model)     
-      
-## 📈 Results     
+## 📊 Dataset
+Source: Titanic dataset (Kaggle)
+Features include:
+ - Age
+ - Sex
+ - Passenger Class (Pclass)
+ - Fare
+ - Number of family members (SibSp, Parch)
+ - Embarked port
+   
+## ⚙️ Models Used
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- XGBoost
+- LightGBM ✅ (Best Model)
+  
+## 📈 Results
 | Model                     | Accuracy | F1 Score |
 |--------------------------|----------|----------|
 | LightGBM                 | 0.82     | 0.75     |
@@ -66,18 +67,18 @@ Features include:
 | Logistic Regression      | 0.79     | 0.70     |
 | Decision Tree            | 0.75     | 0.67     |
 
-## Hyperparameter Tuning    
- Used GridSearchCV and RandomizedSearchCV    
- Tuned parameters like:    
- - n_estimators    
- - max_depth     
- - min_samples_split     
+## Hyperparameter Tuning
+ Used GridSearchCV and RandomizedSearchCV
+ Tuned parameters like:
+ - n_estimators
+ - max_depth
+ - min_samples_split
 
-## 🚀 How to Run    
-1. Install dependencies    
-pip install -r requirements.txt    
-   
-2. Run notebooks    
+## 🚀 How to Run
+1. Install dependencies
+pip install -r requirements.txt
+
+2. Run notebooks
 jupyter notebook
 
 3. Train model (script)
