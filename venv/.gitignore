@@ -1,7 +1,10 @@
-# Created by venv; see https://docs.python.org/3/library/venv.html
 __pycache__/
 *.pyc
 .env
 .ipynb_checkpoints/
-models/*.pkl
+models/*.pk
+
+# allow this specific file
+!models/best_model.pkl
+
 data/processed/
