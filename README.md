@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🚢 Titanic Survival Prediction (Machine Learning Project)
 🎯 Project Goal
 
@@ -248,4 +247,3 @@ data/raw/
 
 Python, pandas, numpy, scikit-learn, matplotlib, seaborn
 
->>>>>>> 5d05f8f181b17c7f41998b9e66f0bdf16a2ad6ef
