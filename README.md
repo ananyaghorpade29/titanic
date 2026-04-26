@@ -1,3 +1,7 @@
+git add README.md
+git commit -m "End-to-end ML project — EDA → feature engineering → XGBoost → SHAP → live Streamlit app. Built as part of a structured ML learning roadmap."
+git push origin main  
+
 # 🚢 Titanic Survival Prediction (Machine Learning Project)
 🎯 Project Goal
 
